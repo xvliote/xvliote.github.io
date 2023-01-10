@@ -1,0 +1,224 @@
+site_name: Road
+
+theme:
+  name: material
+  features:
+    - content.tabs.link
+    - navigation.tabs # 使用Tab来进行分类
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.code.annotate #
+  language: zh # 一些提示性的文字会变成中文
+  favicon: mkdocs/icon/B.svg
+#  logo: mkdocs/icon/A.svg
+  icon:
+    logo: simple/xing
+
+
+  palette:
+    - scheme: default # 日间模式
+      primary: white # 上方的
+      accent: orange # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-sunny # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切换至日间模式
+
+
+nav:
+  - Algorithm:
+      - Introduce: "Algo/Introduce/v.md"
+      - Array:
+          - Basics of Array Theory : "Algo/Array/Basics of Array Theory.md"
+          - Binary search : "Algo/Array/Binary Search.md"
+          - Remove Element : "Algo/Array/Remove Element.md"
+          - Square of sorted array : "Algo/Array/Square of sorted array.md"
+          - The smallest subarray : "Algo/Array/The smallest subarray.md"
+          - Spiral Matrix II : "Algo/Array/Spiral Matrix II.md"
+      - Linked List :
+          - Linked List Theory: "Algo/Linked List/Linked List Theory.md"
+      - Hash Table :
+          - Hash Table Theory : "Algo/Hash Table/Hash Table Theory.md"
+      - String :
+          - Reverse String : "Algo/String/Reverse String/Reverse String.md"
+      - Stacks and Queues:
+          - Theoretical basis : "Algo/Stacks and Queues/theoretical basis.md"
+      - Binary Tree:
+          - Theoretical basis : "Algo/Binary Tree/theoretical basis.md"
+      - Backtracking:
+          - Theoretical basis : "Algo/Backtracking/theoretical basis.md"
+      - Greedy:
+          - Theoretical basis : "Algo/Greedy/theoretical basis.md"
+      - Dynamic Programming:
+          - Theoretical basis : "Algo/Dynamic Programming/theoretical basis.md"
+      - Monotonic Stack :
+          - Theoretical basis : "Algo/Monotonic Stack/theoretical basis.md"
+
+  - CS:
+      - Course : "CS/Courses/Courses.md"
+
+      - Data Structure:
+          - Performance:
+              - Concept: "CS/Data Structure/Algorithm Performance/Algorithm Performance.md"
+          - Linear:
+              - Array:
+                  - Concept: "CS/Data Structure/Linear/Array/Array concept.md"
+              - Linear Table:
+                  - Concept: "CS/Data Structure/Linear/Linear Table/Concept.md"
+              - Queue:
+                  - Concept: "CS/Data Structure/Linear/Queue/Concept.md"
+              - Stack:
+                  - Concept: "CS/Data Structure/Linear/Stack/Concept.md"
+          - Tree:
+              - Concept: "CS/Data Structure/Tree/Concept.md"
+          - Map:
+              - Concept: "CS/Data Structure/Map/Concept.md"
+          - Search:
+              - Concept: "CS/Data Structure/Search/Concept.md"
+          - Sort:
+              - Concept: "CS/Data Structure/Sort/Concept.md"
+
+      - Principles of computer composition:
+          - System Overview: "CS/Principles of computer composition/System Overview/System Overview.md"
+
+      - Operating System:
+          - Overview: "CS/Operating System/Overview/Concept.md"
+
+      - Network:
+          - Overview : "CS/Network/Overview/Concept.md"
+
+  - Math:
+      - Essence : "Math/Essence/Concept.md"
+      - Calculus:
+          - Differential:
+              - Limit : "Math/Calculus/Differential/Limit/Concept.md"
+
+
+          - Integral:
+              - Overview : "Math/Calculus/Integral/Overview/Concept.md"
+
+      - Linear Algebra:
+          - Determinant : "Math/Linear Algebra/Determinant/Concept.md"
+
+      - Probability Theory:
+          - Random Events and Probability: "Math/Probability Theory/Random Events and Probability/Concept.md"
+
+  - C++:
+      - Basic  : "C++/Basic/Concept.md"
+      - Core : "C++/Core/Concept.md"
+      - Improve: "C++/Improve/Concept.md"
+
+
+  - Project:
+      - Introduce: "Project/Introduce/v.md"
+      - Linux Server :
+          - Basic:
+              - GCC : "Project/Linux/Base/GCC.md"
+              - Static Library : "Project/Linux/Base/static library.md"
+              - Dynamic Library : "Project/Linux/Base/dynamic library.md"
+              - Makefile: "Project/Linux/Base/Makefile.md"
+              - GDB: "Project/Linux/Base/GDB.md"
+
+          - Multi-process:
+              - Process Overview: "Project/Linux/Multi-process/Process Overview.md"
+          - Multi-threaded:
+              - Threads Overview: "Project/Linux/Multi-threaded/Threads Overview.md"
+          - Network:
+              - Network Overview: "Project/Linux/Network/Network Overview.md"
+          - Projects:
+              - Architecture: "Project/Linux/Projects/Architecture.md"
+
+
+
+  - IELTS :
+      - Listen: "IELTS/Listen/Concept.md"
+      - Read: "IELTS/Read/Concept.md"
+      - Writing: "IELTS/Writing/Concept.md"
+      - Speaking: "IELTS/Speaking/Concept.md"
+
+
+
+  - Note:
+      - BuildSite: "Notes/Buildsite.md"
+      - Environment:
+          - Mambaforge: "Notes/Environment/Mambaforge.md"
+          - VsCode C++: "Notes/Environment/VsC++.md"
+          - NVM: "Notes/Environment/NVM.md"
+      
+      
+
+
+
+
+plugins:
+  - search: # 现在还不支持中文搜索 支持之后可以设置语言
+      lang:
+        - en
+        - ja
+
+
+
+markdown_extensions:  #推荐配置Markdown基本语法及其扩展
+  - abbr #缩写或名词
+  - pymdownx.snippets  #片段，将任意文件或部分内容嵌入到文档中
+  - admonition  #警告或标注
+  - pymdownx.details  #细节折叠
+  - pymdownx.superfences  #超级围栏
+  - attr_list   #属性列表（按钮-颜色图标）
+  - def_list   #定义列表
+  - footnotes  #行内脚注
+  - meta   #元数据
+  - md_in_html  #HTML 中的 Markdown
+  - toc:
+       toc_depth: 3 #目录深度，默认6，0则隐藏
+       title: LIST  #默认值，自动获取
+  - tables #表格（未推荐）
+  - pymdownx.arithmatex:  #数学公式
+      generic: true
+  - pymdownx.betterem:   #粗体斜体
+      smart_enable: all
+  - pymdownx.caret  #插入角标符号(`^`)
+  - pymdownx.mark  #双等号(`==`)
+  - pymdownx.tilde  #波浪号(`~`)
+  - pymdownx.critic:  #评论家(突出显示建议更改)，未推荐
+  - pymdownx.keys   #键盘键和组合
+  - pymdownx.highlight  #代码高亮，对代码块（SuperFences）和行内代码块（InlineHilite）的语法突出显示
+  - pymdownx.inlinehilite  #行内高亮
+  - pymdownx.smartsymbols  #智能符号
+  - pymdownx.tabbed:  #内容选项卡
+      alternate_style: true  #启用内容选项卡替代样式，必须开启
+  - pymdownx.tasklist:  #任务列表
+      custom_checkbox: true   #切换复选框的呈现样式，将原生复选框样式替换为漂亮的图标
+  - pymdownx.highlight:
+      anchor_linenums: true  #代码块行号锚链接，默认false
+      use_pygments: true  #在构建期间使用Pygments或在浏览器中使用 JavaScript 语法高亮器进行高亮显示，默认true
+      linenums: true #向所有代码块添加行号，默认false
+      linenums_style: pymdownx-inline #三种添加行号的方法，建议table或pymdownx-inline。默认table
+  - pymdownx.superfences
+
+
+extra_javascript:
+  - mkdocs/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
+
+extra_css:
+  - mkdocs/css/no-footer.css # 不使用底部的翻页
+
+extra:
+  generator: false
+  version:
+    default: stable
+
+
+
+
