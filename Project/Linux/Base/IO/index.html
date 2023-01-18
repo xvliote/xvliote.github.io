@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../static%20library/">
+        <link rel="prev" href="../GDB/">
       
       
-        <link rel="next" href="../Makefile/">
+        <link rel="next" href="../../Multi-process/Process%20Overview/">
       
       <link rel="icon" href="../../../../mkdocs/icon/B.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
-        <title>Dynamic Library - Road</title>
+        <title>IO - Road</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#c-io" class="md-skip">
           跳转至
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dynamic Library
+              IO
             
           </span>
         </div>
@@ -2346,71 +2346,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Dynamic Library
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../dynamic%20library/" class="md-nav__link">
         Dynamic Library
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="LIST">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      LIST
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    命名规则
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    工作原理
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    优缺点
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    动态库的制作
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2448,11 +2388,134 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../IO/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          IO
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         IO
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="LIST">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      LIST
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-io" class="md-nav__link">
+    标准 C 库 IO 函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciolinuxio" class="md-nav__link">
+    标准C库IO和Linux系统IO的关系
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    虚拟地址空间
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    文件描述符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-io" class="md-nav__link">
+    Linux 系统 IO 函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    stat 结构体
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_mode" class="md-nav__link">
+    st_mode 变量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    文件属性操作函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    目录操作函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    目录遍历函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dirent-d_type" class="md-nav__link">
+    dirent 结构体和 d_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dupdup2" class="md-nav__link">
+    dup、dup2 函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcntl" class="md-nav__link">
+    fcntl 函数
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2953,29 +3016,92 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#c-io" class="md-nav__link">
+    标准 C 库 IO 函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciolinuxio" class="md-nav__link">
+    标准C库IO和Linux系统IO的关系
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    命名规则
+    虚拟地址空间
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    工作原理
+    文件描述符
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-io" class="md-nav__link">
+    Linux 系统 IO 函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    stat 结构体
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_mode" class="md-nav__link">
+    st_mode 变量
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    优缺点
+    文件属性操作函数
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    动态库的制作
+    目录操作函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    目录遍历函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dirent-d_type" class="md-nav__link">
+    dirent 结构体和 d_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dupdup2" class="md-nav__link">
+    dup、dup2 函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcntl" class="md-nav__link">
+    fcntl 函数
   </a>
   
 </li>
@@ -2996,81 +3122,91 @@
 
 
 
-  <h1>Dynamic Library</h1>
+  <h1>IO</h1>
 
-<h2 id="_1"><strong>命名规则</strong></h2>
-<ol>
-<li>
-<p><code>Linux : libxxx.so</code></p>
-<ul>
-<li><code>lib</code> : 前缀(固定) </li>
-<li><code>xxx</code> : 库的名字，自己起 </li>
-<li><code>.so</code> : 后缀(固定)</li>
-<li>在<code>Linux</code>下是一个可执行文件</li>
-</ul>
-</li>
-<li>
-<p><code>Windows : libxxx.lib</code></p>
-</li>
-</ol>
-<h2 id="_2"><strong>工作原理</strong></h2>
-<ol>
-<li>静态库: <code>GCC</code> 进行链接时，会把静态库中代码打包到可执行程序中</li>
-<li>动态库: <code>GCC</code> 进行链接时，动态库的代码不会被打包到可执行程序中</li>
-<li>程序启动之后，动态库会被动态加载到内存中，通过 <code>ldd</code> <code>(list dynamic dependencies)</code>命令检查动态库依赖关系</li>
-<li>如何定位共享库文件呢?<ul>
-<li>当系统加载可执行代码时候，能够知道其所依赖的库的名字，但是还需要知道绝对路径，此时就需要系统的动态载入器来获取该绝对路径。对于<code>elf</code>格式的可执行程序，是由<code>ld-linux.so</code>来完成的，它先后搜索<code>elf</code>文件的<code>DT_RPATH</code>段 ——&gt; 环境变量<code>LD_LIBRARY_PATH ——&gt; /etc/ld.so.cache</code>文件列表 ——&gt; <code>/lib/</code>，<code>/usr/lib</code>目录找到库文件后将其载入内存。</li>
-</ul>
-</li>
-</ol>
-<h2 id="_3"><strong>优缺点</strong></h2>
-<ol>
-<li>优点:<ul>
-<li>可以实现进程间资源共享(共享库)</li>
-<li>更新、部署、发布简单</li>
-<li>可以控制何时加载动态库</li>
-</ul>
-</li>
-<li>缺点:<ul>
-<li>消耗系统资源，浪费内存</li>
-<li>更新、部署、发布麻烦</li>
-</ul>
-</li>
-</ol>
-<p><img alt="Alt text" src="../MAP/DY/G.png" /></p>
-<h2 id="_4"><strong>动态库的制作</strong></h2>
-<p><img alt="Alt text" src="../MAP/DY/C.png" /></p>
-<ol>
-<li>gcc 得到 .o 文件，得到和位置无关的代码<ul>
-<li><code>gcc -c -fpic add.c div.c mult.c sub.c</code></li>
-</ul>
-</li>
-<li>gcc 得到动态库<ul>
-<li><code>gcc -shared add.o  div.o mult.o  sub.o -o libcalc.so</code></li>
-</ul>
-</li>
-<li>配置动态库路径<ul>
-<li><code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/Linux/lesson04/library/lib</code></li>
-</ul>
-</li>
-<li>编译代码
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos=" 1 "></span></a>    .
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos=" 2 "></span></a>    ├── include
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><a href="#__codelineno-0-3"><span class="linenos" data-linenos=" 3 "></span></a>    │   └── head.h
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><a href="#__codelineno-0-4"><span class="linenos" data-linenos=" 4 "></span></a>    ├── lib
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><a href="#__codelineno-0-5"><span class="linenos" data-linenos=" 5 "></span></a>    │   └── libcalc.so
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><a href="#__codelineno-0-6"><span class="linenos" data-linenos=" 6 "></span></a>    ├── main
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><a href="#__codelineno-0-7"><span class="linenos" data-linenos=" 7 "></span></a>    ├── main.c
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><a href="#__codelineno-0-8"><span class="linenos" data-linenos=" 8 "></span></a>    └── src
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><a href="#__codelineno-0-9"><span class="linenos" data-linenos=" 9 "></span></a>        ├── add.c
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><a href="#__codelineno-0-10"><span class="linenos" data-linenos="10 "></span></a>        ├── div.c
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><a href="#__codelineno-0-11"><span class="linenos" data-linenos="11 "></span></a>        ├── mult.c
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><a href="#__codelineno-0-12"><span class="linenos" data-linenos="12 "></span></a>        └── sub.c
-</code></pre></div><ul>
-<li><code>gcc main.c -o main  -I include/  -L lib/ -l calc</code></li>
-</ul>
-</li>
-</ol>
+<h2 id="c-io"><strong>标准 C 库 IO 函数</strong></h2>
+<p><img alt="Alt text" src="../MAP/IO/A.png" /></p>
+<h2 id="ciolinuxio"><strong>标准C库IO和Linux系统IO的关系</strong></h2>
+<p><img alt="Alt text" src="../MAP/IO/B.png" /></p>
+<h2 id="_1"><strong>虚拟地址空间</strong></h2>
+<p><img alt="Alt text" src="../MAP/IO/C.png" /></p>
+<h2 id="_2"><strong>文件描述符</strong></h2>
+<p><img alt="Alt text" src="../MAP/IO/D.png" /></p>
+<h2 id="linux-io"><strong>Linux 系统 IO 函数</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a>int open(const char *pathname, int flags);
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><a href="#__codelineno-0-2"><span class="linenos" data-linenos="2 "></span></a>int open(const char *pathname, int flags, mode_t mode); 
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><a href="#__codelineno-0-3"><span class="linenos" data-linenos="3 "></span></a>int close(int fd);
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><a href="#__codelineno-0-4"><span class="linenos" data-linenos="4 "></span></a>ssize_t read(int fd, void *buf, size_t count);
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><a href="#__codelineno-0-5"><span class="linenos" data-linenos="5 "></span></a>ssize_t write(int fd, const void *buf, size_t count); 
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><a href="#__codelineno-0-6"><span class="linenos" data-linenos="6 "></span></a>off_t lseek(int fd, off_t offset, int whence);
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><a href="#__codelineno-0-7"><span class="linenos" data-linenos="7 "></span></a>int stat(const char *pathname, struct stat *statbuf);
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><a href="#__codelineno-0-8"><span class="linenos" data-linenos="8 "></span></a>int lstat(const char *pathname, struct stat *statbuf);
+</code></pre></div>
+<h2 id="stat"><strong>stat 结构体</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos=" 1 "></span></a>struct stat {
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><a href="#__codelineno-1-2"><span class="linenos" data-linenos=" 2 "></span></a>    dev_t  st_dev; // 文件的设备编号
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><a href="#__codelineno-1-3"><span class="linenos" data-linenos=" 3 "></span></a>    ino_t  st_ino;  // 节点
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><a href="#__codelineno-1-4"><span class="linenos" data-linenos=" 4 "></span></a>    mode_t   st_mode;  // 文件的类型和存取的权限
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><a href="#__codelineno-1-5"><span class="linenos" data-linenos=" 5 "></span></a>    nlink_t  st_nlink;  // 连到该文件的硬连接数目
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><a href="#__codelineno-1-6"><span class="linenos" data-linenos=" 6 "></span></a>    uid_t   st_uid;   // 用户ID
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><a href="#__codelineno-1-7"><span class="linenos" data-linenos=" 7 "></span></a>    gid_t   st_gid;   // 组ID
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><a href="#__codelineno-1-8"><span class="linenos" data-linenos=" 8 "></span></a>    dev_t   st_rdev;  // 设备文件的设备编号
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><a href="#__codelineno-1-9"><span class="linenos" data-linenos=" 9 "></span></a>    off_t   st_size;  // 文件字节数(文件大小)
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><a href="#__codelineno-1-10"><span class="linenos" data-linenos="10 "></span></a>    blksize_t st_blksize;   // 块大小
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><a href="#__codelineno-1-11"><span class="linenos" data-linenos="11 "></span></a>    blkcnt_t   st_blocks;   // 块数
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><a href="#__codelineno-1-12"><span class="linenos" data-linenos="12 "></span></a>    time_t st_atime;   // 最后一次访问时间
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><a href="#__codelineno-1-13"><span class="linenos" data-linenos="13 "></span></a>    time_t st_mtime;   // 最后一次修改时间
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><a href="#__codelineno-1-14"><span class="linenos" data-linenos="14 "></span></a>    time_t  st_ctime;  // 最后一次改变时间(指属性)
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><a href="#__codelineno-1-15"><span class="linenos" data-linenos="15 "></span></a>};
+</code></pre></div>
+<h2 id="st_mode"><strong>st_mode 变量</strong></h2>
+<p><img alt="Alt text" src="../MAP/IO/G.png" /></p>
+<h2 id="_3"><strong>文件属性操作函数</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos="1 "></span></a>int access(const char *pathname, int mode);
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos="2 "></span></a>int chmod(const char *filename, int mode);
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos="3 "></span></a>int chown(const char *path, uid_t owner, gid_t group); 
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos="4 "></span></a>int truncate(const char *path, off_t length);
+</code></pre></div>
+<h2 id="_4"><strong>目录操作函数</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><a href="#__codelineno-3-1"><span class="linenos" data-linenos="1 "></span></a>int rename(const char *oldpath, const char *newpath); 
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><a href="#__codelineno-3-2"><span class="linenos" data-linenos="2 "></span></a>int chdir(const char *path);
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><a href="#__codelineno-3-3"><span class="linenos" data-linenos="3 "></span></a>char *getcwd(char *buf, size_t size);
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><a href="#__codelineno-3-4"><span class="linenos" data-linenos="4 "></span></a>int mkdir(const char *pathname, mode_t mode);
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><a href="#__codelineno-3-5"><span class="linenos" data-linenos="5 "></span></a>int rmdir(const char *pathname);
+</code></pre></div>
+<h2 id="_5"><strong>目录遍历函数</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos="1 "></span></a>DIR *opendir(const char *name);
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><a href="#__codelineno-4-2"><span class="linenos" data-linenos="2 "></span></a>struct dirent *readdir(DIR *dirp); 
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><a href="#__codelineno-4-3"><span class="linenos" data-linenos="3 "></span></a>int closedir(DIR *dirp);
+</code></pre></div>
+<h2 id="dirent-d_type"><strong>dirent 结构体和 d_type</strong></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><a href="#__codelineno-5-1"><span class="linenos" data-linenos="1 "></span></a>struct dirent {
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><a href="#__codelineno-5-2"><span class="linenos" data-linenos="2 "></span></a>    ino_t d_ino;  // 此目录进入点的inode
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><a href="#__codelineno-5-3"><span class="linenos" data-linenos="3 "></span></a>    off_t d_off;// 目录文件开头至此目录进入点的位移 
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><a href="#__codelineno-5-4"><span class="linenos" data-linenos="4 "></span></a>    unsigned short int d_reclen; // d_name 的长度, 不包含NULL字符 
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><a href="#__codelineno-5-5"><span class="linenos" data-linenos="5 "></span></a>    unsigned char d_type; // d_name 所指的文件类型 
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><a href="#__codelineno-5-6"><span class="linenos" data-linenos="6 "></span></a>    char d_name[256];   // 文件名
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><a href="#__codelineno-5-7"><span class="linenos" data-linenos="7 "></span></a>};
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><a href="#__codelineno-6-1"><span class="linenos" data-linenos="1 "></span></a>d_type
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><a href="#__codelineno-6-2"><span class="linenos" data-linenos="2 "></span></a>    DT_BLK - 块设备 
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><a href="#__codelineno-6-3"><span class="linenos" data-linenos="3 "></span></a>    DT_CHR - 字符设备 
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><a href="#__codelineno-6-4"><span class="linenos" data-linenos="4 "></span></a>    DT_DIR - 目录 
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><a href="#__codelineno-6-5"><span class="linenos" data-linenos="5 "></span></a>    DT_LNK - 软连接 
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><a href="#__codelineno-6-6"><span class="linenos" data-linenos="6 "></span></a>    DT_FIFO - 管道 
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><a href="#__codelineno-6-7"><span class="linenos" data-linenos="7 "></span></a>    DT_REG - 普通文件 
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><a href="#__codelineno-6-8"><span class="linenos" data-linenos="8 "></span></a>    DT_SOCK - 套接字 
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><a href="#__codelineno-6-9"><span class="linenos" data-linenos="9 "></span></a>    DT_UNKNOWN - 未知
+</code></pre></div></p>
+<h2 id="dupdup2"><strong>dup、dup2 函数</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><a href="#__codelineno-7-1"><span class="linenos" data-linenos="1 "></span></a>int dup(int oldfd); 复制文件描述符
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><a href="#__codelineno-7-2"><span class="linenos" data-linenos="2 "></span></a>int dup2(int oldfd, int newfd); 重定向文件描述符
+</code></pre></div>
+<h2 id="fcntl"><strong>fcntl 函数</strong></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><a href="#__codelineno-8-1"><span class="linenos" data-linenos="1 "></span></a>int fcntl(int fd, int cmd, ... /* arg */ ); 
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><a href="#__codelineno-8-2"><span class="linenos" data-linenos="2 "></span></a>     复制文件描述符
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><a href="#__codelineno-8-3"><span class="linenos" data-linenos="3 "></span></a>     设置/获取文件的状态标志
+</code></pre></div>
 
 
 
