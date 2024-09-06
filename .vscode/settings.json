@@ -1,0 +1,6 @@
+{
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///Users/xvz/XV/.github/workflows/deploy.yml"
+    }
+}
