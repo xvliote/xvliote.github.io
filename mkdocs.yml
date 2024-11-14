@@ -2,6 +2,7 @@ site_name: Road
 
 theme:
   name: material
+#   custom_dir: docs/mkdocs/overrides
 
   favicon: mkdocs/icon/B.svg
   icon:
@@ -60,12 +61,14 @@ theme:
     - search.suggest
     - toc.follow
 
+
   font:
     text: Roboto
     code: Roboto Mono
 
 
 nav:
+  - Home: index.md
   - Algorithm:
     - Algo/v.md
     - Array:
@@ -329,5 +332,18 @@ markdown_extensions:
 
 extra:
   generator: false
+
+
+
+extra_css:
+  - mkdocs/css/no-footer.css
+#   - mkdocs/css/extra.css
   
 
+extra_javascript:
+  - mkdocs/css/extra.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js
+  - https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js
+
+
+  
