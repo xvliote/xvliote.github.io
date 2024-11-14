@@ -1,0 +1,16 @@
+/* 将导航栏（左侧）距离最左侧20px */
+.md-header__inner .md-header__title {
+    margin-left: 20px;
+}
+
+/* 将搜索框（右侧）距离最右侧20px */
+.md-header__inner .md-header__button {
+    margin-right: 20px;
+}
+
+/* 确保导航栏和搜索框在同一行并正确对齐 */
+.md-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
